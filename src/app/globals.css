@@ -1,7 +1,24 @@
 @tailwind base;
+@tailwind utilities;
+
+:root {
+  --primary-color: #006fee;
+}
+
+.light body {
+  background-image: url("/images/bg-light-theme.jpeg");
+}
+.dark body {
+  background-image: url("/images/bg-dark-theme.jpeg");
+}
 
 body {
   font-family: var(--font-poppins);
+  padding-top: 32px;
+  padding-bottom: 60px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
@@ -10,4 +27,25 @@ h3,
 h4,
 h5 {
   font-family: var(--font-roboto-slab);
+}
+
+.container {
+  width: calc(100% - 32px);
+  margin: 0 auto;
+
+  @media screen and (min-width: 576px) {
+    max-width: 510px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 690px;
+  }
+  @media screen and (min-width: 992px) {
+    max-width: 930px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1140px;
+  }
+  @media screen and (min-width: 1400px) {
+    max-width: 1320px;
+  }
 }

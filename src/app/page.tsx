@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <main>
-      <h1>Lucas Portfolio</h1>
+    <main className="container">
+      <h1>Portfolio page</h1>
     </main>
   );
 }
