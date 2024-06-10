@@ -11,9 +11,11 @@ export default function SectionPersonalInfo() {
         width={240}
         height={240}
         priority
-        className="inline-block rounded-xl mb-5"
+        className="inline-block rounded-xl mb-5 min-[1400px]:mt-[-180px]"
       />
-      <h2 className="font-medium text-[1.375rem] mb-3">Lucas Barrenechea</h2>
+      <h2 className="font-medium text-[1.375rem] min-[1400px]:text-[1.625rem] mb-3">
+        Lucas Barrenechea
+      </h2>
 
       <div className="bg-[--bg-dark-primary] text-[--body-text] w-fit mx-auto px-5 py-1 rounded-lg font-medium text-sm h-9 flex items-center mb-4">
         <p>Frontend Developer</p>
@@ -25,7 +27,7 @@ export default function SectionPersonalInfo() {
             href={item.link}
             key={item.label}
             target="_blank"
-            className={`w-10 h-10 text-xl bg-[--bg-dark-primary] rounded-lg flex items-center justify-center ${item.colorClass}`}
+            className={`w-10 h-10 text-xl bg-[--bg-dark-primary] hover:bg-[--primary-color] hover:text-white transition-colors duration-300 rounded-lg flex items-center justify-center ${item.colorClass}`}
           >
             <i className={item.icon}></i>
           </a>
@@ -45,9 +47,9 @@ export default function SectionPersonalInfo() {
                 <i className={item.icon}></i>
               </div>
               <div className="text-left">
-                <small className="text-[--body-text]">{item.field}</small>
+                <small className="text-[--body-text] text-xs">{item.field}</small>
                 <p
-                  className="xl:w-[180px] min-[1400px]:w-full truncate"
+                  className="text-sm min-[1400px]:text-base truncate"
                   title={item.value}
                 >
                   {item.value}
@@ -61,7 +63,7 @@ export default function SectionPersonalInfo() {
       <a
         href="/docs/CV_LucasBarrenechea.pdf"
         download
-        className="bg-[--primary-color] text-lg py-3.5 px-8 inline-block rounded-xl font-medium text-white"
+        className="border-2 border-[--primary-color] bg-[--primary-color] text-lg py-3.5 px-8 inline-block rounded-xl font-medium text-white hover:bg-[--bg-dark-primary] transition-colors duration-300"
       >
         <i className="fa-solid fa-download mr-1"></i>
         {""}
