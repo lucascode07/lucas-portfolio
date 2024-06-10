@@ -6,7 +6,7 @@ import ButtonTheme from "../button-theme/button-theme";
 
 export default function Header() {
   return (
-    <header className="mb-12 flex justify-between items-center container">
+    <header className="mb-12 min-[1400px]:mb-[205px] flex justify-between items-center container">
       <h1 className="text-3xl font-bold">
         <Link href="/">Lucas</Link>
       </h1>
