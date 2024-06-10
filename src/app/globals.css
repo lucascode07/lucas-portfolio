@@ -3,6 +3,17 @@
 
 :root {
   --primary-color: #006fee;
+  --bg-dark-primary: #f3f6f6;
+  --bg-white: #fff;
+  --color-divider: #e3e3e3;
+  --body-text: #44566c;
+}
+
+.dark {
+  --bg-dark-primary: #1d1d1d;
+  --bg-white: #000;
+  --color-divider: #333;
+  --body-text: #a6a6a6;
 }
 
 .light body {
@@ -31,7 +42,8 @@ h5 {
 
 .container {
   width: calc(100% - 32px);
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
 
   @media screen and (min-width: 576px) {
     max-width: 510px;
@@ -46,6 +58,6 @@ h5 {
     max-width: 1140px;
   }
   @media screen and (min-width: 1400px) {
-    max-width: 1320px;
+    max-width: 1454px;
   }
 }

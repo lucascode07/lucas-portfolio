@@ -16,13 +16,13 @@ export default function ButtonTheme() {
   if (resolvedTheme === "dark") {
     return (
       <button className="btn-header" onClick={() => setTheme("light")}>
-        <i className="fa-regular fa-sun text-white"></i>
+        <i className="fa-regular fa-sun"></i>
       </button>
     );
   } else {
     return (
       <button className="btn-header" onClick={() => setTheme("dark")}>
-        <i className="fa-solid fa-moon text-white"></i>
+        <i className="fa-solid fa-moon"></i>
       </button>
     );
   }
