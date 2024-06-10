@@ -12,7 +12,7 @@ export default function ButtonMobileNav() {
   return (
     <button
       className={`btn-header btn-nav ${active && "active"}`}
-      popovertarget="navigation-popover"
+      popoverTarget="navigation-popover"
       onClick={handleClickMenu}
     >
       <span className="line"></span>

@@ -2,10 +2,14 @@ header {
   position: relative;
 
   .btn-header {
-    @apply w-[50px] h-[50px] bg-black rounded-full transition-colors;
+    @apply w-[50px] h-[50px] bg-white dark:bg-black text-[--body-text] dark:text-white rounded-full transition-colors shadow-md;
 
     &:hover {
-      @apply bg-[--primary-color];
+      @apply bg-[--primary-color] text-white;
+
+      .line {
+        @apply bg-white;
+      }
     }
 
     &.btn-nav {
@@ -32,7 +36,7 @@ header {
   }
 
   .line {
-    @apply absolute bg-white w-3 h-[2px] rounded-sm transition-transform;
+    @apply absolute bg-[--body-text] dark:bg-white w-3 h-[2px] rounded-sm transition-transform;
 
     &:first-child {
       transform: translateY(-5px);
@@ -44,7 +48,6 @@ header {
 
   [popover] {
     position: absolute;
-    max-width: calc(100% - 32px);
     height: 0;
     overflow: hidden;
     transition: height 0.3s ease-in allow-discrete;
@@ -53,6 +56,6 @@ header {
     top: calc(-100% + 180px);
     height: 200px;
     transform: translateY(50%);
-    @apply bg-[#1d1d1d] w-full text-white;
+    @apply bg-white dark:bg-[#1d1d1d] w-full dark:text-white;
   }
 }

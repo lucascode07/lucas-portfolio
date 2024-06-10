@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function NavigationMobile() {
   return (
     <nav
-      className="py-5 px-10 rounded-xl"
+      className="py-5 px-10 rounded-xl container"
       id="navigation-popover"
       popover="manual"
     >

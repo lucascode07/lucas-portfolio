@@ -1,5 +1,16 @@
 import type { Config } from "tailwindcss";
 
+const safelist = [
+  "text-pink-500",
+  "text-teal-500",
+  "text-red-400",
+  "text-purple-400",
+  "text-blue-600",
+  "text-sky-500",
+  "text-pink-600",
+  "text-blue-900",
+];
+
 const config: Config = {
   content: [
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -17,5 +28,6 @@ const config: Config = {
   },
   plugins: [],
   darkMode: "class",
+  safelist,
 };
 export default config;

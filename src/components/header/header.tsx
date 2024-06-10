@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <header className="mb-12 flex justify-between items-center container">
       <h1 className="text-3xl font-bold">
-        <Link href="/">Lucas Portfolio</Link>
+        <Link href="/">Lucas</Link>
       </h1>
       <div className="flex items-center gap-[10px]">
         <ButtonTheme />
